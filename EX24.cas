@@ -1,0 +1,8 @@
+EX24     START
+         LD      GR0, DATA1
+         SLA     GR0, 1
+         ST      GR0, KOTAE
+         RET
+DATA1    DC      #0023
+KOTAE    DS      1
+         END
