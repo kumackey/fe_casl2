@@ -1,0 +1,12 @@
+EX32     START
+         LD      GR0, =0
+         LD      GR1, =3
+         LD      GR2, =7
+LOOP     ADDA    GR0, GR1
+         ADDA    GR1, =1
+         SUBA    GR2, =1
+         JPL     LOOP
+         ST      GR0, KOTAE
+         RET
+KOTAE    DS      1
+         END
